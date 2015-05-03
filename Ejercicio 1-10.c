@@ -8,17 +8,19 @@
  
 int main ()
 {
-	int caracter;
+	int t;
 	while ( (caracter = getchar()) != EOF ) {
-		if (caracter == '\t') {
-			printf("\t");
-		} else if (caracter == '\b') {
-			printf("\b");
-		} else if (caracter == '/') {
-			printf ("/");
-		} else {
-			putchar(caracter);
-		}
+		if (t == '\t')
+ 			 printf("\\t");
+ 		if (t == '\b')
+ 		 	 printf("\\b");
+ 		 if (t == '\\')
+ 		 {
+ 			 printf("\\");
+ 		 	 printf("\\");
+ 		 }
+ 		if (t !='\t' && t !='\\' && t == '\b'){
+ 		 			 putchar(t);
 	}
 return 0;
 }
